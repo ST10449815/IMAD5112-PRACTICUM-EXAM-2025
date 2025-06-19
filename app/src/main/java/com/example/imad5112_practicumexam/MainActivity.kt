@@ -13,6 +13,7 @@ import androidx.core.view.WindowInsetsCompat
 
 class MainActivity : AppCompatActivity() {
     companion object {
+        // Arrays are used for the song details
         val songTitle = mutableListOf<String>()
         val artistName = mutableListOf<String>()
         val rating = mutableListOf<Int>()
@@ -34,6 +35,7 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
+         //Declaring the variables
         val songTitle = findViewById<EditText>(R.id.editTitle)
         val artistName = findViewById<EditText>(R.id.editName)
         val rating = findViewById<EditText>(R.id.editRating)
@@ -59,6 +61,7 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this, "Please enter a valid rating", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
+             //Add song details
             songTitle.add()
             artistName.add()
             ratingStr.add()
@@ -66,10 +69,12 @@ class MainActivity : AppCompatActivity() {
 
             Toast.makeText(this, "Item added", Toast.LENGTH_SHORT).show()
 
+            //Navigation to the second screen
             nextScreenButton.setOnClickListener {
                 startActivity(Intent(this, SecondActivity::class.java))
             }
 
+             //Exit the app
             exitButton.setOnClickListener {
                 finishAffinity()
 
