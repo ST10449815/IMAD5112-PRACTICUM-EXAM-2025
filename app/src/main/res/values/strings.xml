@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">IMAD5112-PRACTICUM EXAM</string>
+    <string name="add_to_playlist">Add to Playlist</string>
+    <string name="exit_app">Exit App</string>
+    <string name="comment">Comment</string>
+    <string name="screen_two">Screen Two</string>
+    <string name="rating">Rating</string>
+    <string name="song_title">Song Title</string>
+    <string name="the_music_playlist_app">The Music Playlist App</string>
+    <string name="artist_name">Artist Name</string>
+    <string name="main_screen">Main Screen</string>
+    <string name="display_list_of_songs">Display list of songs</string>
+    <string name="calculate_average_rating_of_songs">Calculate average rating of songs</string>
+    <string name="the_music_playlist_app1">The Music Playlist App</string>
+</resources>
