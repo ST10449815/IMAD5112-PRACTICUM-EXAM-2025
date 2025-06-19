@@ -16,17 +16,20 @@ class MainActivity2 : AppCompatActivity() {
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
-        }
+        }  //Declaring the variables
         val displayButton = findViewById<Button>(R.id.btnShowAll)
         val averageButton = findViewById<Button>(R.id.btnShowFiltered)
         val returnButton = findViewById<Button>(R.id.btnReturn)
 
+         //Button displays song details entered
         displayButton.setOnClickListener {
             displayItems(showAll = true)
-        }
+        }  
+        //Calculates average rating for the songs in the playlist
         averageButton.setOnClickListener {
             displayItems(showAll = false)
         }
+          //Navigate to main screen button
         returnButton.setOnClickListener {
             finish()
         }
